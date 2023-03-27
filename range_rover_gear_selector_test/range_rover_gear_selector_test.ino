@@ -96,7 +96,7 @@ void loop()
           b1 = 0x24;
           b4 = 0xFA;
           b5 = 0xFF;
-          b6 = 0x05;
+          b6 = 0x08;
           b7 = 0x00;
           Scycle = 0x07;
           Fcycle = 0x15;
