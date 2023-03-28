@@ -17,16 +17,17 @@
 0x3F3 ID from ECU
 Byte 
       0.   5C in park, 7C for not parked. Can be either value, but needs to be one of those for selector to work
-1.  66 in park, 24 in R, 25 in N, 24 in D. Not needed to raise knob, doesnt change light
+1.  66 in park, 24 in R, 25 in N, 24 in D and S. Not needed to raise knob, doesnt change light
 2.  Cycling value in any state, 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 0A, 0B, 0C, 0D, 0E,.
 3. Cycling depending on gear. Must match byte 2 in cycle
    1. In park 82, 83, 86, 87, 88, 89, 8A, 8B, 8C, 8D, 8E, 8F, 90, 
    2. In R: 03, 04, 05, 06, 07, 08, 09, 0A, 0B, 0C, 0D, 0E, 0F, 10, 11
    3. In N: 04, 05, 06, 07, 08, 09, 0A, 0B, 0C, 0D, 0E, 0F, 10, 11, 12
    4. In D: 06, 07. 08, 09, 0A, 0B, 0C, 0D, 0E, 0F, 10, 11, 12, 13, 14
-4.  FF in park, FE in R, FD in N, FB in D Needs to be FF to raise knob, lights not on when changed
+   5. In S: 0A, 0B, 0C, 0D, 0E, 0F, 10, 11, 12, 13, 14, 15, 16, 17, 18
+4.  FF in park, FE in R, FD in N, FB in D, F7 in S. Needs to be FF to raise knob, lights not on when changed
 5. 7F in park, FF in not parked Needs to be 7F to raise knob, lights not on when changed
-6. Gear selection. 00 in park, 01 in R, 02 in N, 04 in Drive. Needs to be 00 to raise knob. Flights not on when changed
+6. Gear selection. 00 in park, 01 in R, 02 in N, 04 in Drive, 08 in S. Needs to be 00 to raise knob. Flights not on when changed
 7. 80 in park, 00 in not parked
 
 

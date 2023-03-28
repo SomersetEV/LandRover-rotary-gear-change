@@ -94,13 +94,13 @@ void loop()
           case 0x88: // S
           b0 = 0x7C;
           b1 = 0x24;
-          b4 = 0xFA;
+          b4 = 0xF7;
           b5 = 0xFF;
-          b6 = 0x05;
+          b6 = 0x08;
           b7 = 0x00;
-          Scycle = 0x07;
-          Fcycle = 0x15;
-          counter1 = counter - 7;
+          Scycle = 0x0A;
+          Fcycle = 0x18;
+          counter1 = counter - 10;
           break;
 
       }
